@@ -14,17 +14,13 @@ input, textarea {outline: none;}
     margin: 0 auto;
     box-sizing: border-box;
 }
-td {
-    display: table-cell; 
-    vertical-align: inherit;
-}
 
 /* 헤더 */
 header {
     position: relative;
     width: 100%;
     height: 142px;
-    background-image: url(/Farmstory/img/head_top_line.png);
+    background-image: url(../img/head_top_line.png);
     background-repeat: no-repeat;
     box-sizing: border-box;
 }
@@ -83,6 +79,12 @@ header > .gnb > li:nth-child(3) > a:hover {background-image: url(../img/head_men
 header > .gnb > li:nth-child(4) > a:hover {background-image: url(../img/head_menu4_ov.png);}
 header > .gnb > li:nth-child(5) > a:hover {background-image: url(../img/head_menu5_ov.png);}
 
+header > .gnb > li:nth-child(1).on > a {background-image: url(../img/head_menu1_ov.png);}
+header > .gnb > li:nth-child(2).on > a {background-image: url(../img/head_menu2_ov.png);}
+header > .gnb > li:nth-child(3).on > a {background-image: url(../img/head_menu3_ov.png);}
+header > .gnb > li:nth-child(4).on > a {background-image: url(../img/head_menu4_ov.png);}
+header > .gnb > li:nth-child(5).on > a {background-image: url(../img/head_menu5_ov.png);}
+
 header > .gnb > li > a > img {
     position: absolute;
     left: 50%;
@@ -99,8 +101,38 @@ main > div {
     margin-top: 10px;
 }
 main > .slider {
+    position: relative;
     height: 312px;
+    overflow: hidden;
 }
+
+main > .slider > img {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+}
+
+main > .slider > .banner {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 230px;
+    height: 312px;
+    background-image: url(../img/main_banner_bg.jpg);
+}
+
+main > .slider > .banner > img:nth-child(1) {
+    float: right;
+    margin: 10px;
+}
+main > .slider > .banner > img:nth-child(2) {
+    margin-top: -20px;
+    margin-left: 10px;
+}
+main > .slider > .banner > img:nth-child(3) {
+    margin-left: 10px;
+}
+
 main > .quick {
     height: 74px;
     overflow: hidden;
@@ -232,11 +264,11 @@ footer > p > em {
     font-weight: bold;
 }
 
-    /* 서브 페이지 공통 */
-    #sub {
-    width: 100%;
-    height: auto;
-    box-sizing: border-box;
+/* 서브 페이지 공통 */
+#sub {
+width: 100%;
+height: auto;
+box-sizing: border-box;
 }
 #sub > div {
     position: relative;
@@ -262,7 +294,7 @@ footer > p > em {
 
 #sub > section > aside {
     float: left;
-    width: 174px;
+    width: 176px;
     height: 650px;
     background-image: url(../img/sub_aside_bg_line.png);
     background-repeat: no-repeat;
@@ -294,7 +326,7 @@ footer > p > em {
 /* 보더 빠지고 width(804) 조정 다시하기 */
 #sub > section > article {
     float: left;
-    width: 800px;
+    width: 804px;
     min-height: 650px;
     padding-left: 40px;
     box-sizing: border-box;
@@ -343,8 +375,10 @@ footer > p > em {
 /* 팜스토리소개 */
 #sub > .cate1 .lnb > li:nth-child(1) > a {background-image: url(../img/sub_cate1_lnb1.png);}
 #sub > .cate1 .lnb > li:nth-child(2) > a {background-image: url(../img/sub_cate1_lnb2.png);}
+
 #sub > .cate1 .lnb > li:nth-child(1) > a:hover {background-image: url(../img/sub_cate1_lnb1_ov.png);}
 #sub > .cate1 .lnb > li:nth-child(2) > a:hover {background-image: url(../img/sub_cate1_lnb2_ov.png);}
+
 #sub > .cate1 .lnb > li:nth-child(1).on > a {background-image: url(../img/sub_cate1_lnb1_ov.png);}
 #sub > .cate1 .lnb > li:nth-child(2).on > a {background-image: url(../img/sub_cate1_lnb2_ov.png);}
 
@@ -354,5 +388,38 @@ footer > p > em {
 #sub > .cate2 .lnb > li:nth-child(1).on > a {background-image: url(../img/sub_cate2_lnb1_ov.png);}
 
 /* 농작물이야기 */
+#sub > .cate3 .lnb > li:nth-child(1) > a {background-image: url(../img/sub_cate3_lnb1.png);}
+#sub > .cate3 .lnb > li:nth-child(2) > a {background-image: url(../img/sub_cate3_lnb2.png);}
+#sub > .cate3 .lnb > li:nth-child(3) > a {background-image: url(../img/sub_cate3_lnb3.png);}
+
+#sub > .cate3 .lnb > li:nth-child(1) > a:hover {background-image: url(../img/sub_cate3_lnb1_ov.png);}
+#sub > .cate3 .lnb > li:nth-child(2) > a:hover {background-image: url(../img/sub_cate3_lnb2_ov.png);}
+#sub > .cate3 .lnb > li:nth-child(3) > a:hover {background-image: url(../img/sub_cate3_lnb3_ov.png);}
+
+#sub > .cate3 .lnb > li:nth-child(1).on > a {background-image: url(../img/sub_cate3_lnb1_ov.png);}
+#sub > .cate3 .lnb > li:nth-child(2).on > a {background-image: url(../img/sub_cate3_lnb2_ov.png);}
+#sub > .cate3 .lnb > li:nth-child(3).on > a {background-image: url(../img/sub_cate3_lnb3_ov.png);}
+
 /* 이벤트 */
+#sub > .cate4 .lnb > li:nth-child(1) > a {background-image: url(../img/sub_cate4_lnb1.png);}
+#sub > .cate4 .lnb > li:nth-child(1) > a:hover {background-image: url(../img/sub_cate4_lnb1_ov.png);}
+#sub > .cate4 .lnb > li:nth-child(1).on > a {background-image: url(../img/sub_cate4_lnb1_ov.png);}
+
 /* 커뮤니티 */
+#sub > .cate5 .lnb > li:nth-child(1) > a {background-image: url(../img/sub_cate5_lnb1.png);}
+#sub > .cate5 .lnb > li:nth-child(2) > a {background-image: url(../img/sub_cate5_lnb2.png);}
+#sub > .cate5 .lnb > li:nth-child(3) > a {background-image: url(../img/sub_cate5_lnb3.png);}
+#sub > .cate5 .lnb > li:nth-child(4) > a {background-image: url(../img/sub_cate5_lnb4.png);}
+#sub > .cate5 .lnb > li:nth-child(5) > a {background-image: url(../img/sub_cate5_lnb5.png);}
+
+#sub > .cate5 .lnb > li:nth-child(1) > a:hover {background-image: url(../img/sub_cate5_lnb1_ov.png);}
+#sub > .cate5 .lnb > li:nth-child(2) > a:hover {background-image: url(../img/sub_cate5_lnb2_ov.png);}
+#sub > .cate5 .lnb > li:nth-child(3) > a:hover {background-image: url(../img/sub_cate5_lnb3_ov.png);}
+#sub > .cate5 .lnb > li:nth-child(4) > a:hover {background-image: url(../img/sub_cate5_lnb4_ov.png);}
+#sub > .cate5 .lnb > li:nth-child(5) > a:hover {background-image: url(../img/sub_cate5_lnb5_ov.png);}
+
+#sub > .cate5 .lnb > li:nth-child(1).on > a {background-image: url(../img/sub_cate5_lnb1_ov.png);}
+#sub > .cate5 .lnb > li:nth-child(2).on > a {background-image: url(../img/sub_cate5_lnb2_ov.png);}
+#sub > .cate5 .lnb > li:nth-child(3).on > a {background-image: url(../img/sub_cate5_lnb3_ov.png);}
+#sub > .cate5 .lnb > li:nth-child(4).on > a {background-image: url(../img/sub_cate5_lnb4_ov.png);}
+#sub > .cate5 .lnb > li:nth-child(5).on > a {background-image: url(../img/sub_cate5_lnb5_ov.png);}

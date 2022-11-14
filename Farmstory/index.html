@@ -4,6 +4,26 @@
     <meta charset="UTF-8">
     <title>팜스토리 :: 메인</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            let slides = $('.slider > ul > li');
+            let i = 0;
+
+            setInterval(() => {
+
+                slides.eq(i).animate({'left':'-100%'}, 1000);
+                i++;
+
+                if(i >= 3){
+                    i = 0;
+                }
+
+                slides.eq(i).css('left', '100%').animate({'left':'0'}, 1000);
+            }, 3000);
+
+        });
+    </script>
 </head>
 <body>
     <div id="wrapper">
@@ -29,18 +49,30 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">농작물이야기</a>
+                    <a href="./croptalk/story.html">농작물이야기</a>
                 </li>
                 <li>
-                    <a href="#">이벤트</a>
+                    <a href="./event/event.html">이벤트</a>
                 </li>
                 <li>
-                    <a href="#">커뮤니티</a>
+                    <a href="./community/notice.html">커뮤니티</a>
                 </li>
             </ul>
         </header>
         <main>
-            <div class="slider"></div>
+            <div class="slider">
+                <ul>
+                    <li><img src="./img/main_slide_img1.jpg" alt="슬라이더1"></li>
+                    <li><img src="./img/main_slide_img2.jpg" alt="슬라이더2"></li>
+                    <li><img src="./img/main_slide_img3.jpg" alt="슬라이더3"></li>
+                </ul>
+                <img src="./img/main_slide_img_tit.png" alt="사람과 자연을 사랑하는 팜스토리">
+                <div class="banner">
+                    <img src="./img/main_banner_txt.png" alt="GRAND OPEN">
+                    <img src="./img/main_banner_tit.png" alt="팜스토리 오픈기념 30% 할인 이벤트">
+                    <img src="./img/main_banner_img.png" alt="과일">
+                </div>
+            </div>
             <div class="quick">
                 <a href="#">
                     <img src="./img/main_banner_sub1_tit.png" alt="오늘의 식단">
@@ -58,35 +90,35 @@
                     <table border="0">
                         <tbody>
                             <tr>
-                                <td></td>
+                                <td>></td>
                                 <td>
                                     <a href="#">토마토! 건강하게 길러서 안심하고 먹자</a>
                                 </td>
                                 <td>20-12-22</td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td>></td>
                                 <td>
                                     <a href="#">토마토! 건강하게 길러서 안심하고 먹자</a>
                                 </td>
                                 <td>20-12-22</td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td>></td>
                                 <td>
                                     <a href="#">토마토! 건강하게 길러서 안심하고 먹자</a>
                                 </td>
                                 <td>20-12-22</td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td>></td>
                                 <td>
                                     <a href="#">토마토! 건강하게 길러서 안심하고 먹자</a>
                                 </td>
                                 <td>20-12-22</td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td>></td>
                                 <td>
                                     <a href="#">토마토! 건강하게 길러서 안심하고 먹자</a>
                                 </td>
@@ -103,35 +135,35 @@
                     <table border="0">
                         <tbody>
                             <tr>
-                                <td></td>
+                                <td>></td>
                                 <td>
                                     <a href="#">토마토! 건강하게 길러서 안심하고 먹자</a>
                                 </td>
                                 <td>20-12-22</td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td>></td>
                                 <td>
                                     <a href="#">토마토! 건강하게 길러서 안심하고 먹자</a>
                                 </td>
                                 <td>20-12-22</td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td>></td>
                                 <td>
                                     <a href="#">토마토! 건강하게 길러서 안심하고 먹자</a>
                                 </td>
                                 <td>20-12-22</td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td>></td>
                                 <td>
                                     <a href="#">토마토! 건강하게 길러서 안심하고 먹자</a>
                                 </td>
                                 <td>20-12-22</td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td>></td>
                                 <td>
                                     <a href="#">토마토! 건강하게 길러서 안심하고 먹자</a>
                                 </td>
@@ -148,35 +180,35 @@
                     <table border="0">
                         <tbody>
                             <tr>
-                                <td></td>
+                                <td>></td>
                                 <td>
                                     <a href="#">토마토! 건강하게 길러서 안심하고 먹자</a>
                                 </td>
                                 <td>20-12-22</td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td>></td>
                                 <td>
                                     <a href="#">토마토! 건강하게 길러서 안심하고 먹자</a>
                                 </td>
                                 <td>20-12-22</td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td>></td>
                                 <td>
                                     <a href="#">토마토! 건강하게 길러서 안심하고 먹자</a>
                                 </td>
                                 <td>20-12-22</td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td>></td>
                                 <td>
                                     <a href="#">토마토! 건강하게 길러서 안심하고 먹자</a>
                                 </td>
                                 <td>20-12-22</td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td>></td>
                                 <td>
                                     <a href="#">토마토! 건강하게 길러서 안심하고 먹자</a>
                                 </td>
@@ -193,9 +225,9 @@
                         <img src="./img/main_sub2_cs_img.png" alt>
                         <img src="./img/main_sub2_cs_txt.png" alt="1666-777">
                         <p class="time">
-                            평일 : AM 09:00 ~ PM 06:00
+                            평일: AM 09:00 ~ PM 06:00
                             <br>
-                            점심 : PM 12:00 ~ PM 01:00
+                            점심: PM 12:00 ~ PM 01:00
                             <br>
                             토, 일요일, 공휴일 휴무
                         </p>
