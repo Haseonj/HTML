@@ -11,6 +11,8 @@ input, textarea {outline: none;}
     width: 100%;
     height: 100%;
 }
+/* bxslider 설정값 변경 */
+.bx-wrapper {margin-bottom: 0px;}
 
 /* Header */
 header {
@@ -184,12 +186,14 @@ main > .vegetable > article {
     box-sizing: border-box;
     text-align: center;
 }
-main .thumb_rolling {
-    width: 100%;
-    height: 312px;
+main .cover {
     margin-top: 36px;
     box-sizing: border-box;
     overflow: hidden;
+}
+main .thumb_rolling {
+    width: 100%;
+    height: 312px;
 }
 main .thumb_rolling > li {
     float: left;
@@ -215,7 +219,6 @@ main .thumb_rolling > li h1 {
     color: #41392f;
     margin-top: 12px;
 }
-/* 13 > 12 변경 */
 main .thumb_rolling > li p {
     font-size: 13px;
     font-weight: bold;
