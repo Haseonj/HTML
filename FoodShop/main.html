@@ -5,17 +5,25 @@
     <title>main</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script>
-        $(function(){
-    		$('.slider > ul').bxslider({
-                slideWidth: 1100,
+       $(function(){
+    		$('.slider > article > ul').bxSlider({
+		    	slideWidth: 1100,
 				pager: false,
 		    	controls: false,
+		    	auto: true,
+		    });
+            $('.vegetable > article .thumb_rolling').bxSlider({
+		    	slideWidth: 1100,
+                minSlides: 4,
+                maxSlides: 4,
+				pager: true,
+		    	controls: false,
 		    	auto: true
-            });
-        });
+		    });
+    	});
     </script>
 </head>
 <body>
@@ -66,11 +74,11 @@
             <section class="slider">
                 <article>
                     <ul>
-                        <li><img src="./img/slider_banner1.jpg" alt="자연의 신선함!"></li>
-                        <li><img src="./img/slider_banner2.jpg" alt="자연의 신선함!"></li>
-                        <li><img src="./img/slider_banner3.jpg" alt="자연의 신선함!"></li>
-                        <li><img src="./img/slider_banner4.jpg" alt="자연의 신선함!"></li>
-                        <li><img src="./img/slider_banner5.jpg" alt="자연의 신선함!"></li>
+                        <li><img src="./img/slider_banner1.jpg" alt="슬라이드1"></li>
+                        <li><img src="./img/slider_banner2.jpg" alt="슬라이드2"></li>
+                        <li><img src="./img/slider_banner3.jpg" alt="슬라이드3"></li>
+                        <li><img src="./img/slider_banner4.jpg" alt="슬라이드4"></li>
+                        <li><img src="./img/slider_banner5.jpg" alt="슬라이드5"></li>
                     </ul>
                 </article>
             </section>

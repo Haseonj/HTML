@@ -117,19 +117,21 @@ main > .slider {
     background: #ffeed4;
 }
 main > .slider ul {
-    float: left;
     position: relative;
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
 main > .slider ul > li {
-    position: absolute;
     width: 100%;
     height: 100%;
 }
-main > .slider > img {
 
+main > .slider > img {}
+.bx-wrapper {            
+    box-shadow: none;
+    border: none;
+    background: #fff;
 }
 main > .go {}
 
